@@ -12,6 +12,9 @@ namespace PMWebAPI.PMDomain.Entity
         public byte[] RowVersion { get; set; }
 
         #region relationship
+        public Guid ProjectId { get; set; }
+        public Project Project { get; set; }
+
         public Guid EventMessageId { get; set; }
         public EventMessage EventMessage { get; set; }
 

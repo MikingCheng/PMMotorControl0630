@@ -21,6 +21,7 @@ namespace PMWebAPI.PMDomain.Entity
         public virtual List<Holiday> Holidays { get; set; } = new List<Holiday>();
         public virtual List<Group> Groups { get; set; } = new List<Group>();
         public virtual List<Operator> Operators { get; set; } = new List<Operator>();
+        public virtual List<Event> Events { get; set; } = new List<Event>();
         #endregion
     }
 }

@@ -8,9 +8,10 @@ using PMWebAPI.PMDomain.EFContext;
 namespace PMWebAPI.Migrations
 {
     [DbContext(typeof(ShadingContext))]
-    partial class ShadingContextModelSnapshot : ModelSnapshot
+    [Migration("20160702084659_addRepository")]
+    partial class addRepository
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
             modelBuilder
                 .HasAnnotation("ProductVersion", "1.0.0-rtm-21431")

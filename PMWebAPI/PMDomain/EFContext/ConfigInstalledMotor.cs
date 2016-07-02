@@ -17,7 +17,7 @@ namespace PMWebAPI.PMDomain.EFContext
             entityBuilder.Property(m => m.RowVersion).IsConcurrencyToken();
 
             entityBuilder.HasOne(m => m.Location)
-                         .WithOne(l => l.InstallMotor)
+                         .WithOne(l => l.InstalledMotor)
                          .HasForeignKey<InstalledMotor>(m => m.LocationId);
             entityBuilder.HasOne(m => m.MotorInfo)
                          .WithMany(i => i.InstalledMotors)

@@ -17,7 +17,9 @@ namespace PMWebAPI.PMDomain.EFContext
             entityBuilder.Property(s => s.ModifiedDate).IsRequired();
             entityBuilder.Property(s => s.RowVersion).IsConcurrencyToken();
 
-            entityBuilder.HasOne(s => s.Project).WithMany(p => p.Scenes).HasForeignKey(s => s.ProjectId);
+            entityBuilder.HasOne(s => s.Project)
+                         .WithMany(p => p.Scenes)
+                         .HasForeignKey(s => s.ProjectId);
         }
     }
 }

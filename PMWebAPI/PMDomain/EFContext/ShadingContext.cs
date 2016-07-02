@@ -23,6 +23,7 @@ namespace PMWebAPI.PMDomain.EFContext
         public DbSet<Project> Projects { get; set; }
         public DbSet<Scene> Scenes { get; set; }
         public DbSet<SceneSegment> SceneSegments { get; set; }
+        public DbSet<GroupInstalledMotor> GroupInstalledMotors { get; set; }
 
         //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         //{
